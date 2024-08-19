@@ -1,1 +1,11 @@
-<p>listar-pensamento works!</p>
+<section class="container">
+  <header class="header d-flex">
+    <h2 class="ff-inter">Meu mural</h2>
+    <button routerLink="/criarPensamento" class="botao">Adicionar pensamento</button>
+  </header>
+  <div class="mural">
+    <div *ngFor="let itens of listaPensamentos">
+      <app-pensamento [pensamento]="itens"></app-pensamento>
+    </div>
+  </div>
+</section>
