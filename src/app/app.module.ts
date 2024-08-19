@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/cabecalho/cabecalho.component';
 import { FooterComponent } from './components/rodape/rodape.component';
 import { CreateIdeaComponent } from './components/pensamentos/criar-pensamentos/criar-pensamento.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CreateIdeaComponent } from './components/pensamentos/criar-pensamentos/
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,12 +11,20 @@ export class CreateIdeaComponent implements OnInit {
     id: '1',
     conteudo: 'Apredendo Angular', 
     autoria: 'Dev',
-    modelo: ''
+    modelo: 'modelo3'
   }
   
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  criarPensamento(){
+
+  }
+
+  cancelar(){
+
   }
 
 }
