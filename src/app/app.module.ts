@@ -7,13 +7,15 @@ import { HeaderComponent } from './components/cabecalho/cabecalho.component';
 import { FooterComponent } from './components/rodape/rodape.component';
 import { CreateIdeaComponent } from './components/pensamentos/criar-pensamentos/criar-pensamento.component';
 import { FormsModule } from '@angular/forms';
+import { ListarPensamentoComponent } from './components/pensamentos/listar-pensamento/listar-pensamento.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    CreateIdeaComponent
+    CreateIdeaComponent,
+    ListarPensamentoComponent
   ],
   imports: [
     BrowserModule,
