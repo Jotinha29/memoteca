@@ -39,8 +39,14 @@ export class PensamentoService {
     );
   }
 
+  edit(pensamento: Pensamento): Observable<Pensamento> {
+    const url = `${this.API}/${pensamento.id}`
+    return this.http.put<Pensamento>(url, pensamento )
+  }
+
   private handleError(error: any) {
     console.error('Ocorreu um erro', error);
     return throwError(() => new Error('Erro na comunicação com a API'));
   }
+
 }
